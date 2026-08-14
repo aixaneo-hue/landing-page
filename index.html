@@ -8,16 +8,28 @@
 <body style="margin:0; padding:20px; background-color:#06101E; color:#FFFFFF; font-family:sans-serif; min-height:100vh; display:block; overflow:visible;">
     <div style="max-width:1200px; margin:0 auto; box-sizing:border-box;">
         
-        <!-- Header Navbar Section -->
+
+
+
+        <!-- New Image-Ready Navbar Section -->
         <nav style="display:flex; justify-content:space-between; align-items:center; padding:20px 0; border-bottom:1px solid rgba(255,255,255,0.1); box-sizing:border-box;">
-            <div>
-                <h1 style="margin:0; font-size:1.8rem; letter-spacing:3px; text-transform:uppercase;">Aixaneo</h1>
-                <span style="font-size:0.7rem; letter-spacing:5px; color:#8892B0; text-transform:uppercase;">Technologies</span>
+            <div style="display:flex; align-items:center;">
+                <!-- DYNAMIC IMAGE LOGO HANDLER -->
+                <img src="logo.png" alt="Aixaneo Technologies" style="max-height:48px; width:auto; display:block;" onerror="this.style.display='none'; document.getElementById('text-fallback').style.display='block';">
+                
+                <!-- Smart Fallback: Displays text logo automatically if logo.png is missing -->
+                <div id="text-fallback" style="display:none; text-align:left;">
+                    <h1 style="margin:0; font-size:1.8rem; letter-spacing:3px; text-transform:uppercase; color:#FFFFFF;">Aixaneo</h1>
+                    <span style="font-size:0.7rem; letter-spacing:5px; color:#8892B0; text-transform:uppercase; display:block;">Technologies</span>
+                </div>
             </div>
             <div style="background:rgba(0,240,255,0.08); color:#00F0FF; padding:8px 16px; border-radius:4px; font-size:0.75rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; border:1px solid rgba(0,240,255,0.2);">
                 Phase 1 MVP Pilot Validation Active
             </div>
         </nav>
+
+
+
 
         <!-- Main Hero Presentation Section -->
         <header style="text-align:center; padding:60px 0; box-sizing:border-box;">
