@@ -7,29 +7,35 @@
 </head>
 <body style="margin:0; padding:20px; background-color:#06101E; color:#FFFFFF; font-family:sans-serif; min-height:100vh; display:block; overflow:visible;">
     <div style="max-width:1200px; margin:0 auto; box-sizing:border-box;">
-        <!-- Image-Ready Navbar Section -->
-        <nav style="display:flex; justify-content:space-between; align-items:center; padding:20px 0; border-bottom:1px solid rgba(255,255,255,0.1); box-sizing:border-box;">
+
+        <!-- Navbar Section -->
+        <nav style="display:flex; justify-content:space-between; align-items:center; padding:20px 0; border-bottom:1px solid rgba(255,255,255,0.1); box-sizing:border-box; flex-wrap:wrap; gap:12px;">
             <div style="display:flex; align-items:center;">
+                <!-- DYNAMIC IMAGE LOGO HANDLER -->
                 <img src="logo.png" alt="Aixaneo Technologies" style="max-height:48px; width:auto; display:block;" onerror="this.style.display='none'; document.getElementById('text-fallback').style.display='block';">
+                
+                <!-- Smart Fallback: Displays text logo automatically if logo.png is missing -->
                 <div id="text-fallback" style="display:none; text-align:left;">
                     <h1 style="margin:0; font-size:1.8rem; letter-spacing:3px; text-transform:uppercase; color:#FFFFFF;">Aixaneo</h1>
                     <span style="font-size:0.7rem; letter-spacing:5px; color:#8892B0; text-transform:uppercase; display:block;">Technologies</span>
                 </div>
             </div>
             <div style="background:rgba(0,240,255,0.08); color:#00F0FF; padding:8px 16px; border-radius:4px; font-size:0.75rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; border:1px solid rgba(0,240,255,0.2);">
-                Phase 1 MVP &mdash; Early Access Waitlist
+                Phase 1 MVP — Early Access Waitlist
             </div>
         </nav>
+
         <!-- Main Hero Presentation Section -->
-        <header id="early-access" style="text-align:center; padding:60px 0 40px 0; box-sizing:border-box;">
+        <header id="early-access" style="text-align:center; padding:60px 0 50px 0; box-sizing:border-box;">
             <div style="font-size:0.8rem; font-weight:600; color:#00F0FF; letter-spacing:3px; text-transform:uppercase; margin-bottom:20px;">
                 // Gated Enterprise Pre-Launch
             </div>
             <h2 style="font-size:2.8rem; margin-bottom:15px; line-height:1.2;">Unified Infrastructure.<br><span style="color:#00F0FF;">Continuous Control.</span></h2>
             <p style="color:#8892B0; max-width:740px; margin:0 auto 30px auto; font-size:1.1rem; font-weight:300; line-height:1.6;">
-                Stop juggling disconnected tools across cloud, on-premises estates, and Indian statutory compliance. Aixaneo unifies hybrid FinOps and automated DPDP, CERT-In, and GST governance into a single sovereign control tower engineered for Indian enterprises.
+                Stop juggling disconnected tools across cloud, on-premises infrastructure, and Indian regulatory workflows. Aixaneo unifies hybrid FinOps and automated DPDP, CERT-In, and GST governance into a single sovereign control tower engineered for Indian enterprises.
             </p>
-            <form onsubmit="event.preventDefault(); alert('Early access request recorded. Our enterprise architecture team will contact you shortly.');" style="background:#0B192E; border:1px solid rgba(0,240,255,0.3); padding:6px; border-radius:8px; display:inline-flex; width:100%; max-width:550px; box-shadow:0 0 30px rgba(0,240,255,0.05); box-sizing:border-box;">
+
+            <form onsubmit="event.preventDefault(); alert('Handshake recorded. Our enterprise coordination cell will contact you shortly.');" style="background:#0B192E; border:1px solid rgba(0,240,255,0.3); padding:6px; border-radius:8px; display:inline-flex; width:100%; max-width:550px; box-shadow:0 0 30px rgba(0,240,255,0.05); box-sizing:border-box;">
                 <input type="email" placeholder="Enter corporate email address" style="flex:1; background:transparent; border:none; padding:14px; color:#FFFFFF; outline:none; font-size:1rem; box-sizing:border-box;" required>
                 <button type="submit" style="background:#00F0FF; color:#06101E; border:none; padding:14px 24px; font-weight:700; border-radius:6px; cursor:pointer; font-size:0.95rem; white-space:nowrap; box-sizing:border-box;">Join Early Access</button>
             </form>
@@ -37,164 +43,200 @@
                 * Now enrolling design partners for Phase 1 architecture previews.
             </p>
         </header>
-        <!-- Zero-Trust & Sovereign Architecture Guardrails (Symmetrical 2x2 Grid) -->
-        <section style="max-width:960px; margin:0 auto 55px auto; box-sizing:border-box;">
-            <h4 style="text-align:center; font-size:0.85rem; text-transform:uppercase; letter-spacing:3px; color:#00F0FF; margin-bottom:20px;">Zero-Trust &amp; Sovereign Architecture Guardrails</h4>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); gap:14px; box-sizing:border-box;">
-                <div style="background:#0B192E; border:1px solid rgba(0,240,255,0.18); padding:14px 20px; border-radius:6px; font-size:0.88rem; color:#CCD6F6; text-align:center; box-sizing:border-box;">
-                    <strong style="color:#00F0FF;">100% Read-Only APIs</strong> &middot; Zero Write Scope
-                </div>
-                <div style="background:#0B192E; border:1px solid rgba(0,240,255,0.18); padding:14px 20px; border-radius:6px; font-size:0.88rem; color:#CCD6F6; text-align:center; box-sizing:border-box;">
-                    <strong style="color:#00F0FF;">Zero-Agent Deployment</strong> &middot; Pure API Ingestion
-                </div>
-                <div style="background:#0B192E; border:1px solid rgba(0,240,255,0.18); padding:14px 20px; border-radius:6px; font-size:0.88rem; color:#CCD6F6; text-align:center; box-sizing:border-box;">
-                    <strong style="color:#00F0FF;">Row-Level Isolation</strong> &middot; PostgreSQL RLS + Vault
-                </div>
-                <div style="background:#0B192E; border:1px solid rgba(0,240,255,0.18); padding:14px 20px; border-radius:6px; font-size:0.88rem; color:#CCD6F6; text-align:center; box-sizing:border-box;">
-                    <strong style="color:#00F0FF;">Sovereign Compliance</strong> &middot; Native Indian PII Guard
+
+        <!-- Framed Guardrails & Connectors Band (Top & Bottom Separators) -->
+        <div style="border-top:1px solid rgba(0,240,255,0.18); border-bottom:1px solid rgba(0,240,255,0.18); padding:44px 0; margin-bottom:60px; box-sizing:border-box;">
+
+            <!-- Core Architectural Promises (Symmetrical 2x2 Grid) -->
+            <div style="max-width:960px; margin:0 auto 44px auto; box-sizing:border-box;">
+                <h4 style="text-align:center; font-size:0.85rem; text-transform:uppercase; letter-spacing:3px; color:#00F0FF; margin:0 0 22px 0;">Zero-Trust &amp; Sovereign Architecture Guardrails</h4>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); gap:14px; box-sizing:border-box;">
+                    <div style="background:#0B192E; border:1px solid rgba(0,240,255,0.18); padding:14px 20px; border-radius:6px; font-size:0.9rem; color:#CCD6F6; text-align:center; box-sizing:border-box;">
+                        <strong style="color:#00F0FF;">100% Read-Only APIs</strong> &middot; Zero Write Scope
+                    </div>
+                    <div style="background:#0B192E; border:1px solid rgba(0,240,255,0.18); padding:14px 20px; border-radius:6px; font-size:0.9rem; color:#CCD6F6; text-align:center; box-sizing:border-box;">
+                        <strong style="color:#00F0FF;">Zero-Agent Deployment</strong> &middot; Pure API Ingestion
+                    </div>
+                    <div style="background:#0B192E; border:1px solid rgba(0,240,255,0.18); padding:14px 20px; border-radius:6px; font-size:0.9rem; color:#CCD6F6; text-align:center; box-sizing:border-box;">
+                        <strong style="color:#00F0FF;">Row-Level Isolation</strong> &middot; PostgreSQL RLS + Vault
+                    </div>
+                    <div style="background:#0B192E; border:1px solid rgba(0,240,255,0.18); padding:14px 20px; border-radius:6px; font-size:0.9rem; color:#CCD6F6; text-align:center; box-sizing:border-box;">
+                        <strong style="color:#00F0FF;">Sovereign Compliance</strong> &middot; Native Indian PII Guard
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- Integration Connectors Alignment Bar (Structured Pill Badges) -->
-        <div style="max-width:960px; margin:0 auto 65px auto; text-align:center; box-sizing:border-box;">
-            <h4 style="font-size:0.85rem; text-transform:uppercase; letter-spacing:3px; color:#00F0FF; margin-bottom:20px;">Native Cloud, On-Premises &amp; Statutory Connectors</h4>
-            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; box-sizing:border-box;">
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">AWS-API-Gateway</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">Microsoft-Azure</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">Google-GCP</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">Oracle-OCI</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">VMware-vSphere</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">Nutanix-AHV</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">Proxmox-VE</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">RedHat-KVM</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">Microsoft-Graph</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">Okta-Identity</span>
-                <span style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:4px; font-size:0.82rem; font-family:monospace;">GSTN-Network</span>
+
+            <!-- Subtle Inner Divider -->
+            <div style="max-width:600px; height:1px; background:rgba(255,255,255,0.07); margin:0 auto 38px auto;"></div>
+
+            <!-- Integration Connectors Alignment Bar (Structured Badge Grid) -->
+            <div style="max-width:960px; margin:0 auto; text-align:center; box-sizing:border-box;">
+                <h4 style="font-size:0.85rem; text-transform:uppercase; letter-spacing:3px; color:#00F0FF; margin:0 0 20px 0;">Native Cloud, On-Premises &amp; Statutory Connectors</h4>
+                <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; box-sizing:border-box;">
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">AWS-API-Gateway</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">Microsoft-Azure</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">Google-GCP</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">Oracle-OCI</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">VMware-vSphere</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">Nutanix-AHV</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">Proxmox-VE</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">RedHat-KVM</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">Microsoft-Graph</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">Okta-Identity</span>
+                    <span style="background:rgba(11,25,46,0.9); border:1px solid rgba(255,255,255,0.12); color:#CCD6F6; padding:7px 14px; border-radius:5px; font-size:0.85rem; font-family:monospace;">GSTN-Network</span>
+                </div>
             </div>
+
         </div>
-        <!-- PHASE 1: Core Control Tower Suites -->
-        <section style="box-sizing:border-box; display:block; margin-bottom:65px;">
+
+        <!-- PHASE 1: Core Release Suites -->
+        <section style="box-sizing:border-box; display:block; margin-bottom:70px;">
             <div style="text-align:center; margin-bottom:40px;">
-                <span style="font-size:0.75rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#00F0FF; display:block; margin-bottom:8px;">Phase 1 Core Release &mdash; Bundled Control Tower</span>
+                <span style="font-size:0.75rem; font-weight:700; color:#00F0FF; letter-spacing:2px; text-transform:uppercase; display:block; margin-bottom:8px;">Phase 1 Core Release // In Development</span>
                 <h3 style="margin:0; text-transform:uppercase; font-size:1.6rem; letter-spacing:1px;">The Enterprise Control Tower Engine</h3>
             </div>
+            
             <div style="display:flex; flex-direction:row; flex-wrap:wrap; gap:24px; justify-content:center; box-sizing:border-box;">
-                <!-- Suite 01 -->
-                <div style="background:#0B192E; border-top:3px solid #00F0FF; padding:26px; border-radius:8px; box-shadow:0 10px 25px rgba(0,0,0,0.2); box-sizing:border-box; flex:1 1 420px; max-width:520px; display:flex; flex-direction:column;">
+                
+                <!-- Suite 01: FinOps -->
+                <div style="background:#0B192E; border-top:3px solid #00F0FF; border-left:1px solid rgba(0,240,255,0.15); border-right:1px solid rgba(0,240,255,0.15); border-bottom:1px solid rgba(0,240,255,0.15); padding:26px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.25); box-sizing:border-box; flex:1 1 420px; max-width:520px; min-height:290px; display:flex; flex-direction:column;">
                     <div>
-                        <div style="display:flex; justify-content:space-between; align-items:center;">
-                            <span style="color:#00F0FF; font-size:0.8rem; font-weight:600; letter-spacing:1px;">SUITE 01: Aixaneo FinOps</span>
-                            <span style="background:rgba(0,240,255,0.12); color:#00F0FF; font-size:0.7rem; font-weight:700; padding:3px 8px; border-radius:4px;">PHASE 1 &mdash; IN DEVELOPMENT</span>
+                        <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+                            <span style="color:#00F0FF; font-size:0.82rem; font-weight:700; letter-spacing:1px;">SUITE 01: Aixaneo FinOps</span>
+                            <span style="background:rgba(0,240,255,0.12); color:#00F0FF; font-size:0.68rem; font-weight:700; padding:3px 8px; border-radius:4px; letter-spacing:1px;">PHASE 1 — IN DEVELOPMENT</span>
                         </div>
-                        <h4 style="margin:10px 0; font-size:1.35rem; font-weight:700;">Hybrid Cloud &amp; SaaS Financials</h4>
-                        <p style="color:#8892B0; margin:0 0 14px 0; font-size:0.95rem; font-weight:300; line-height:1.5;">Real-time visibility and optimization mechanisms built to map multi-cloud, on-premises, and AI spending profiles natively.</p>
+                        <h4 style="margin:10px 0; font-size:1.4rem; font-weight:700;">Hybrid Cloud, SaaS &amp; GenAI Financials</h4>
+                        <p style="color:#8892B0; margin:0 0 12px 0; font-size:0.95rem; font-weight:300; line-height:1.5;">Real-time visibility and optimization mechanisms built to map public cloud, private hypervisor, and LLM spending profiles natively.</p>
                     </div>
-                    <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:14px; margin-top:auto; font-size:0.88rem; color:#CCD6F6; line-height:1.6;">
-                        <div style="margin-bottom:8px;">&#9632; Cloud &amp; Virtualization Zombie Hunter</div>
+                    <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:14px; margin-top:auto; font-size:0.88rem; color:#CCD6F6; line-height:1.7;">
+                        <div style="margin-bottom:8px;">&#9632; Cloud &amp; Virtualization Zombie Resource Hunter</div>
                         <div style="margin-bottom:8px;">&#9632; SaaS License Lifecycle Optimizer</div>
                         <div style="margin-bottom:8px;">&#9632; Intelligent Contract Renewal Sentinel</div>
-                        <div>&#9632; Enterprise GenAI &amp; LLM Cost Tracker</div>
+                        <div>&#9632; GenAI &amp; Enterprise LLM Cost Tracker</div>
                     </div>
                 </div>
-                <!-- Suite 02 (Renamed from Suite 04) -->
-                <div style="background:#0B192E; border-top:3px solid #00F0FF; padding:26px; border-radius:8px; box-shadow:0 10px 25px rgba(0,0,0,0.2); box-sizing:border-box; flex:1 1 420px; max-width:520px; display:flex; flex-direction:column;">
+
+                <!-- Suite 02: Comply -->
+                <div style="background:#0B192E; border-top:3px solid #00F0FF; border-left:1px solid rgba(0,240,255,0.15); border-right:1px solid rgba(0,240,255,0.15); border-bottom:1px solid rgba(0,240,255,0.15); padding:26px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.25); box-sizing:border-box; flex:1 1 420px; max-width:520px; min-height:290px; display:flex; flex-direction:column;">
                     <div>
-                        <div style="display:flex; justify-content:space-between; align-items:center;">
-                            <span style="color:#00F0FF; font-size:0.8rem; font-weight:600; letter-spacing:1px;">SUITE 02: Aixaneo Comply</span>
-                            <span style="background:rgba(0,240,255,0.12); color:#00F0FF; font-size:0.7rem; font-weight:700; padding:3px 8px; border-radius:4px;">PHASE 1 &mdash; IN DEVELOPMENT</span>
+                        <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+                            <span style="color:#00F0FF; font-size:0.82rem; font-weight:700; letter-spacing:1px;">SUITE 02: Aixaneo Comply</span>
+                            <span style="background:rgba(0,240,255,0.12); color:#00F0FF; font-size:0.68rem; font-weight:700; padding:3px 8px; border-radius:4px; letter-spacing:1px;">PHASE 1 — IN DEVELOPMENT</span>
                         </div>
-                        <h4 style="margin:10px 0; font-size:1.35rem; font-weight:700;">Indian Regulatory Compliance</h4>
-                        <p style="color:#8892B0; margin:0 0 14px 0; font-size:0.95rem; font-weight:300; line-height:1.5;">Keep operations fully protected from localized regulatory fines and statutory leaks across hybrid infrastructure.</p>
+                        <h4 style="margin:10px 0; font-size:1.4rem; font-weight:700;">Indian Regulatory Compliance</h4>
+                        <p style="color:#8892B0; margin:0 0 12px 0; font-size:0.95rem; font-weight:300; line-height:1.5;">Keep operations fully protected from localized regulatory fines, statutory tax leakage, and data privacy violations.</p>
                     </div>
-                    <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:14px; margin-top:auto; font-size:0.88rem; color:#CCD6F6; line-height:1.6;">
-                        <div style="margin-bottom:8px;">&#9632; IT Asset GST Input Tax Credit Optimizer</div>
+                    <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:14px; margin-top:auto; font-size:0.88rem; color:#CCD6F6; line-height:1.7;">
+                        <div style="margin-bottom:8px;">&#9632; IT Asset GST Input Tax Credit (ITC) Optimizer</div>
                         <div style="margin-bottom:8px;">&#9632; DPDP Act Individual Privacy Guard</div>
                         <div>&#9632; CERT-In 6-Hour Incident Reporting Engine</div>
                     </div>
                 </div>
+
             </div>
         </section>
-        <!-- 28-DAY PROOF OF VALUE SPOTLIGHT -->
-        <section style="max-width:1064px; margin:0 auto 75px auto; box-sizing:border-box;">
-            <div style="background:#0B192E; border:1px solid rgba(0,240,255,0.25); border-radius:10px; padding:32px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; box-shadow:0 12px 30px rgba(0,0,0,0.25); box-sizing:border-box;">
-                <div style="flex:1 1 560px;">
-                    <div style="font-size:0.75rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#00F0FF; margin-bottom:8px;">
-                        Zero-Risk Design Partner Evaluation
-                    </div>
-                    <h3 style="margin:0 0 10px 0; font-size:1.45rem; color:#FFFFFF;">&#8377;0 Sponsored 28-Day Proof of Value (PoV)</h3>
-                    <p style="margin:0; color:#8892B0; font-size:0.95rem; line-height:1.6; font-weight:300;">
-                        Validate Aixaneo across up to <strong style="color:#CCD6F6;">50 Managed Connections</strong> using 100% read-only API ingestion and zero agents. On Day 28, receive an immutable, audit-ready <strong style="color:#CCD6F6;">CFO Rupee-Savings Ledger</strong> quantifying exact cloud/hybrid waste and GST ITC recovery identified.
-                    </p>
+
+        <!-- 28-Day Proof of Value (PoV) Spotlight -->
+        <section style="background:linear-gradient(180deg, rgba(11,25,46,0.9) 0%, rgba(6,16,30,0.9) 100%); border:1px solid rgba(0,240,255,0.25); border-radius:10px; padding:40px 28px; margin-bottom:70px; box-sizing:border-box; text-align:center;">
+            <span style="font-size:0.75rem; font-weight:700; color:#00F0FF; letter-spacing:2px; text-transform:uppercase; display:block; margin-bottom:8px;">Zero-Risk Design Partner Evaluation</span>
+            <h3 style="margin:0 0 14px 0; font-size:1.65rem; letter-spacing:0.5px;">The 28-Day Sovereign Proof of Value (PoV)</h3>
+            <p style="color:#8892B0; max-width:700px; margin:0 auto 28px auto; font-size:0.98rem; font-weight:300; line-height:1.6;">
+                Validate real infrastructure savings and compliance posture on your own hybrid estate before making any commercial commitment.
+            </p>
+
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; max-width:960px; margin:0 auto 28px auto; box-sizing:border-box;">
+                <div style="background:#06101E; border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:22px; flex:1 1 260px; max-width:300px; box-sizing:border-box;">
+                    <div style="font-size:1.9rem; font-weight:700; color:#00F0FF; margin-bottom:6px;">&#8377;0</div>
+                    <div style="font-size:0.9rem; font-weight:700; color:#FFFFFF; margin-bottom:6px;">Sponsored 28-Day PoV</div>
+                    <div style="font-size:0.83rem; color:#8892B0; line-height:1.5;">Full read-only evaluation across up to 50 Managed Connections with zero upfront software cost.</div>
                 </div>
-                <div style="flex:0 0 auto;">
-                    <a href="#early-access" style="display:inline-block; background:#00F0FF; color:#06101E; text-decoration:none; padding:14px 24px; font-weight:700; border-radius:6px; font-size:0.92rem;">Apply for Design Partner PoV</a>
+                <div style="background:#06101E; border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:22px; flex:1 1 260px; max-width:300px; box-sizing:border-box;">
+                    <div style="font-size:1.9rem; font-weight:700; color:#00F0FF; margin-bottom:6px;">100%</div>
+                    <div style="font-size:0.9rem; font-weight:700; color:#FFFFFF; margin-bottom:6px;">Read-Only &amp; Agentless</div>
+                    <div style="font-size:0.83rem; color:#8892B0; line-height:1.5;">Scoped GET/LIST API ingestion only—zero agents installed on your servers or cloud workloads.</div>
+                </div>
+                <div style="background:#06101E; border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:22px; flex:1 1 260px; max-width:300px; box-sizing:border-box;">
+                    <div style="font-size:1.9rem; font-weight:700; color:#00F0FF; margin-bottom:6px;">Day 28</div>
+                    <div style="font-size:0.9rem; font-weight:700; color:#FFFFFF; margin-bottom:6px;">CFO Rupee-Savings Ledger</div>
+                    <div style="font-size:0.83rem; color:#8892B0; line-height:1.5;">Audit-ready PDF &amp; XLSX executive report detailing verified infrastructure waste and GST ITC recovery.</div>
                 </div>
             </div>
+
+            <a href="#early-access" style="display:inline-block; background:transparent; color:#00F0FF; border:1px solid #00F0FF; padding:12px 26px; border-radius:6px; text-decoration:none; font-size:0.9rem; font-weight:700; letter-spacing:0.5px;">Apply for Design Partner Access &uarr;</a>
         </section>
-        <!-- PHASE 2: Enterprise Expansion Roadmap -->
-        <section style="box-sizing:border-box; display:block; border-top:1px solid rgba(255,255,255,0.08); padding-top:55px;">
-            <div style="text-align:center; margin-bottom:40px;">
-                <span style="font-size:0.75rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#8892B0; display:block; margin-bottom:8px;">Phase 2 Platform Roadmap</span>
-                <h3 style="margin:0; text-transform:uppercase; font-size:1.35rem; letter-spacing:1px; color:#CCD6F6;">Upcoming Control Tower Modules</h3>
+
+        <!-- PHASE 2: Platform Expansion Roadmap -->
+        <section style="box-sizing:border-box; display:block; padding-top:45px; border-top:1px solid rgba(255,255,255,0.08);">
+            <div style="text-align:center; margin-bottom:35px;">
+                <span style="font-size:0.75rem; font-weight:600; color:#8892B0; letter-spacing:2px; text-transform:uppercase; display:block; margin-bottom:8px;">Platform Vision // Phase 2 Roadmap</span>
+                <h3 style="margin:0; text-transform:uppercase; font-size:1.35rem; letter-spacing:1px; color:#CCD6F6;">Enterprise Expansion Modules</h3>
             </div>
+
             <div style="display:flex; flex-direction:row; flex-wrap:wrap; gap:18px; justify-content:center; box-sizing:border-box;">
-                <!-- Suite 03 -->
-                <div style="background:rgba(11,25,46,0.65); border-top:3px solid #1A73E8; padding:20px; border-radius:8px; box-sizing:border-box; flex:1 1 250px; max-width:280px; display:flex; flex-direction:column;">
+                
+                <!-- Suite 03: Automation -->
+                <div style="background:rgba(11,25,46,0.65); border-top:2px solid #1A73E8; padding:20px; border-radius:8px; box-sizing:border-box; flex:1 1 250px; max-width:280px; min-height:240px; display:flex; flex-direction:column;">
                     <div>
-                        <span style="color:#8892B0; font-size:0.75rem; font-weight:600; letter-spacing:1px;">SUITE 03: Aixaneo Automation</span>
-                        <h4 style="margin:8px 0; font-size:1.15rem; font-weight:700; color:#CCD6F6;">IT Operations &amp; Automation</h4>
-                        <p style="color:#8892B0; margin:0 0 10px 0; font-size:0.88rem; font-weight:300; line-height:1.5;">Eliminate manual operational friction utilizing automated corporate deployment patterns.</p>
+                        <span style="color:#8892B0; font-size:0.78rem; font-weight:600; letter-spacing:1px;">SUITE 03: Aixaneo Automation</span>
+                        <h4 style="margin:8px 0; font-size:1.15rem; font-weight:700; color:#E6F1FF;">IT Operations &amp; Automation</h4>
+                        <p style="color:#8892B0; margin:0 0 10px 0; font-size:0.88rem; font-weight:300; line-height:1.45;">Eliminate manual operational friction utilizing automated corporate deployment patterns.</p>
                     </div>
-                    <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:12px; margin-top:auto; font-size:0.82rem; color:#8892B0; line-height:1.6;">
+                    <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:10px; margin-top:auto; font-size:0.82rem; color:#8892B0; line-height:1.55;">
                         <div style="margin-bottom:6px;">&#9632; Zero-Touch Identity Orchestrator</div>
                         <div style="margin-bottom:6px;">&#9632; AI-Powered Service Desk Triage</div>
                         <div>&#9632; Unified Log &amp; Alert Aggregator</div>
                     </div>
                 </div>
-                <!-- Suite 04 -->
-                <div style="background:rgba(11,25,46,0.65); border-top:3px solid #1A73E8; padding:20px; border-radius:8px; box-sizing:border-box; flex:1 1 250px; max-width:280px; display:flex; flex-direction:column;">
+
+                <!-- Suite 04: SecOps -->
+                <div style="background:rgba(11,25,46,0.65); border-top:2px solid #1A73E8; padding:20px; border-radius:8px; box-sizing:border-box; flex:1 1 250px; max-width:280px; min-height:240px; display:flex; flex-direction:column;">
                     <div>
-                        <span style="color:#8892B0; font-size:0.75rem; font-weight:600; letter-spacing:1px;">SUITE 04: Aixaneo SecOps</span>
-                        <h4 style="margin:8px 0; font-size:1.15rem; font-weight:700; color:#CCD6F6;">Cyber Posture &amp; Shadow AI</h4>
-                        <p style="color:#8892B0; margin:0 0 10px 0; font-size:0.88rem; font-weight:300; line-height:1.5;">Continuous hybrid defensive shielding and unauthorized enterprise data loss prevention.</p>
+                        <span style="color:#8892B0; font-size:0.78rem; font-weight:600; letter-spacing:1px;">SUITE 04: Aixaneo SecOps</span>
+                        <h4 style="margin:8px 0; font-size:1.15rem; font-weight:700; color:#E6F1FF;">Cyber Posture &amp; Shadow AI</h4>
+                        <p style="color:#8892B0; margin:0 0 10px 0; font-size:0.88rem; font-weight:300; line-height:1.45;">Continuous defensive infrastructure shielding and unauthorized enterprise data loss prevention.</p>
                     </div>
-                    <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:12px; margin-top:auto; font-size:0.82rem; color:#8892B0; line-height:1.6;">
+                    <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:10px; margin-top:auto; font-size:0.82rem; color:#8892B0; line-height:1.55;">
                         <div style="margin-bottom:6px;">&#9632; 3rd-Party Vendor Risk Mapping</div>
                         <div style="margin-bottom:6px;">&#9632; Shadow IT Interface Interceptor</div>
                         <div>&#9632; Hybrid Misconfiguration Auditor</div>
                     </div>
                 </div>
-                <!-- Suite 05 -->
-                <div style="background:rgba(11,25,46,0.65); border-top:3px solid #1A73E8; padding:20px; border-radius:8px; box-sizing:border-box; flex:1 1 250px; max-width:280px; display:flex; flex-direction:column;">
+
+                <!-- Suite 05: GreenOps -->
+                <div style="background:rgba(11,25,46,0.65); border-top:2px solid #1A73E8; padding:20px; border-radius:8px; box-sizing:border-box; flex:1 1 250px; max-width:280px; min-height:240px; display:flex; flex-direction:column;">
                     <div>
-                        <span style="color:#8892B0; font-size:0.75rem; font-weight:600; letter-spacing:1px;">SUITE 05: Aixaneo GreenOps</span>
-                        <h4 style="margin:8px 0; font-size:1.15rem; font-weight:700; color:#CCD6F6;">Green IT &amp; Fleet Management</h4>
-                        <p style="color:#8892B0; margin:0 0 10px 0; font-size:0.88rem; font-weight:300; line-height:1.5;">Automated computing lifecycle tracing alongside mandatory environmental sustainability auditing.</p>
+                        <span style="color:#8892B0; font-size:0.78rem; font-weight:600; letter-spacing:1px;">SUITE 05: Aixaneo GreenOps</span>
+                        <h4 style="margin:8px 0; font-size:1.15rem; font-weight:700; color:#E6F1FF;">Green IT &amp; Fleet Management</h4>
+                        <p style="color:#8892B0; margin:0 0 10px 0; font-size:0.88rem; font-weight:300; line-height:1.45;">Automated computing lifecycle tracing alongside mandatory environmental sustainability auditing.</p>
                     </div>
-                    <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:12px; margin-top:auto; font-size:0.82rem; color:#8892B0; line-height:1.6;">
+                    <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:10px; margin-top:auto; font-size:0.82rem; color:#8892B0; line-height:1.55;">
                         <div style="margin-bottom:6px;">&#9632; E-Waste Asset Lifecycle Auditor</div>
                         <div>&#9632; Cloud Carbon Footprint BRSR Estimator</div>
                     </div>
                 </div>
-                <!-- Suite 06 -->
-                <div style="background:rgba(11,25,46,0.65); border-top:3px solid #1A73E8; padding:20px; border-radius:8px; box-sizing:border-box; flex:1 1 250px; max-width:280px; display:flex; flex-direction:column;">
+
+                <!-- Suite 06: Governance -->
+                <div style="background:rgba(11,25,46,0.65); border-top:2px solid #1A73E8; padding:20px; border-radius:8px; box-sizing:border-box; flex:1 1 250px; max-width:280px; min-height:240px; display:flex; flex-direction:column;">
                     <div>
-                        <span style="color:#8892B0; font-size:0.75rem; font-weight:600; letter-spacing:1px;">SUITE 06: Aixaneo Governance</span>
-                        <h4 style="margin:8px 0; font-size:1.15rem; font-weight:700; color:#CCD6F6;">Paperless Operations Suite</h4>
-                        <p style="color:#8892B0; margin:0 0 10px 0; font-size:0.88rem; font-weight:300; line-height:1.5;">Complete structural elimination of physical documentation tracking and verification delays.</p>
+                        <span style="color:#8892B0; font-size:0.78rem; font-weight:600; letter-spacing:1px;">SUITE 06: Aixaneo Governance</span>
+                        <h4 style="margin:8px 0; font-size:1.15rem; font-weight:700; color:#E6F1FF;">Paperless Operations Suite</h4>
+                        <p style="color:#8892B0; margin:0 0 10px 0; font-size:0.88rem; font-weight:300; line-height:1.45;">Complete structural elimination of physical documentation tracking and verification delays.</p>
                     </div>
-                    <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:12px; margin-top:auto; font-size:0.82rem; color:#8892B0; line-height:1.6;">
-                        <div style="margin-bottom:6px;">&#9632; India-Compliant Digital Contract Hub</div>
+                    <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:10px; margin-top:auto; font-size:0.82rem; color:#8892B0; line-height:1.55;">
+                        <div style="margin-bottom:6px;">&#9632; Digital Contract Lifecycle Hub</div>
                         <div style="margin-bottom:6px;">&#9632; Aadhaar eSign &amp; Digital Stamping</div>
                         <div>&#9632; Corporate Board Resolution Router</div>
                     </div>
                 </div>
+
             </div>
         </section>
+
         <!-- Footer -->
-        <footer style="text-align:center; padding:40px 0; color:rgba(255,255,255,0.35); font-size:0.8rem; border-top:1px solid rgba(255,255,255,0.05); margin-top:55px;">
-            &copy; 2026 Aixaneo Technologies. Sovereign India Data Residency &middot; Securely engineered via HashiCorp Vault RLS Encryption and Envoy Rate-Limiting.
+        <footer style="text-align:center; padding:40px 0; color:rgba(255,255,255,0.35); font-size:0.8rem; border-top:1px solid rgba(255,255,255,0.08); margin-top:60px;">
+            &copy; 2026 Aixaneo Technologies. Indian Sovereign Data Residency &middot; Engineered via HashiCorp Vault RLS Encryption and Envoy Rate-Limiting.
         </footer>
+
     </div>
 </body>
 </html>
